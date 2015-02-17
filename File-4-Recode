@@ -1,0 +1,18 @@
+### Reliability
+
+def REL(title,number):
+    print "*"
+    print "**"
+    print "***"
+    print "**** Reliability of " + title
+    print "***"
+    print "**"
+    print "*"
+    print "RELIABILITY "
+    print "/VARIABLES= "
+    for x in xrange(1,number+1):
+        print title+str(x)
+    print " /SCALE('ALL VARIABLES') ALL "
+    print "/MODEL=ALPHA."
+    print "*********"
+    print "     "
