@@ -115,29 +115,41 @@ ii.	Type REC(list,number) into Python.
 iii.	Replace number with the number of the scale you would like to invert.
 
 iv.	Press Enter. 
+
 v.	Check your work and then copy and paste the output from Python into SPSS.
 
 For example:
+
 Input:
+
 list=[“Happiness2R”,”Happiness3R”,”Happiness7R”]
 REC(list,8) 
 
 Output:
+
 RECODE  Happiness2R Happiness3R Happiness7R 1=5 2=4 3=3 4=2 5=1 INTO  Happiness2 Happiness3 Happiness7
 
 
 (2.D) REL(title,number): If you would like to calculate the reliability for one single variable, use the REL(title,number) function. (REL stands for Reliability)
+
 i.	Type REL(title,number) into Python.
+
 ii.	Replace title with the name of your measure attribute. Use apostrophes! 
+
 iii.	Replace number with the number of this measure attribute.
+
 iv.	Press Enter. 
+
 v.	Check your work and then copy and paste the output from Python into SPSS. 
 
 For example:
+
 Input:
+
 REL(“Extroversion_”, 5)
 
 Output:
+
 * ** *** **** Reliability of Extroversion_ *** ** * RELIABILITY  /VARIABLES=  Extroversion_1 Extroversion_2 Extroversion_3 Extroversion_4 Extroversion_5  /SCALE('ALL VARIABLES') ALL  /MODEL=ALPHA. *********
 
 
@@ -148,14 +160,16 @@ Output:
 AR(title,number) outputs the exact same thing as REL(title,number), but without all of the extra text and just the variable names. You can copy and paste this into your SPSS code outputted from REL(title,number).
 
 For example:
+
 Input:
+
 AR(“Outgoing_”, 3)
 
-	Output:
-	Outgoing_1 Outgoing_2 Outgoing_3
+Output:
 
-	Then you can copy and paste this into your Extroversion SPSS
-source code:
+Outgoing_1 Outgoing_2 Outgoing_3
+
+Then you can copy and paste this into your Extroversion SPSS source code:
 
 * ** *** **** Reliability of Extroversion_ *** ** * RELIABILITY  /VARIABLES=  Extroversion_1 Extroversion_2 Extroversion_3 Extroversion_4 Extroversion_5 Outgoing_1 Outgoing_2 Outgoing_3  /SCALE('ALL VARIABLES') ALL  /MODEL=ALPHA. *********
 
