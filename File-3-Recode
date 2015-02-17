@@ -1,0 +1,14 @@
+### Recode functions
+
+list = ["item1_R","item2_R","item3_R","item4_R","item5_R","item6_R","item7_R","item8_R","item9_R","item10_R","item11_R","item12_R","item13_R","item14_R","item15_R"]
+
+def REC(list,number):
+    print "RECODE "
+    for element in list:
+        print element
+    for x in xrange(1,number+1):
+        print str(x)+"="+str(number-x+1)
+    print "INTO "
+    for element in list:
+        element = element[:-1]
+        print element
