@@ -1,0 +1,5 @@
+### Additional variable generator for reliability
+
+def AR(title,number):
+    for x in xrange(1,number+1):
+        print title+str(x)
