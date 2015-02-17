@@ -1,0 +1,19 @@
+### Mean functions
+
+def M(title,number):
+    print "*"
+    print "**"
+    print "***"
+    print "**** Mean of " + title
+    print "***"
+    print "**"
+    print "*"
+    print "Compute "+title+"_Mean=Mean("
+    for x in xrange(1,number+1):
+        if x != number:
+            print title+str(x)+", "
+        if x == number:
+            print title+str(x)+")."
+    print "Execute"
+    print "*********"
+    print "     "
